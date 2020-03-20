@@ -3,9 +3,6 @@
 # Date : 26.02.2020
 # Version : 0.1
 
-   
-    
-    
 Category = ["Phone","Phone","Phone","Phone","Phone","Phone","Tablet","Tablet","Tablet","Tablet","Sim Card","Sim Card","Case","Case","Charger","Charger","Charger"]
 Item_Code = ["BPCM","BPSH","RPSS","RPLL","YPLS","YPLL","RTMS","RTLM","YTLM","YTLL","SMNO","SMPG","CSST","CSLX","CGCR","CGHM","CGBT"]
 Description = ["Compact","Clam Shell","RoboPhone - 5-inch screen and 64GB memory","RoboPhone - 6-inch screen and 256GB memory","Y-Phone Standard - 6-inch screen and 64GB memory","Y-Phone Deluxe - 6-inch screen and 256GB memory","RoboTab - 8-inch screen and 64GB memory","RoboTab - 10-inch screen and 128GB memory","Y-Tab Standard - 10-inch screen and 128GB memory","Y-Tab Deluxe - 10-inch screen and 256 memory","Sim Free (no sim card purchased)","Pay As You Go (Sim card purchased)","Standard","Luxury","Car","Home","Both"]
@@ -95,7 +92,7 @@ if __name__ == '__main__':
         chose = check_input(choices)
         chose -= 1
         print(Category[chose] + " - " + Item_Code[chose] + "  - " + Description[chose] + " - " + Price[chose] + "\n")
-        total += float( Price[chose] )
+        total += (float( Price[chose] ) * 0.9)
         choices = 1
 	
         for counter in range(len(Category)):
